@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Logo } from './Logo';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -177,9 +176,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
             <a 
                 href="#" 
                 onClick={(e) => handleLinkClick(e, 'home')}
-                className="block text-ink"
+                className={`font-serif text-2xl md:text-3xl font-bold tracking-tight transition-colors duration-500 ${isMobileMenuOpen ? 'text-canvas' : 'text-ink'}`}
             >
-              <Logo className="h-10 md:h-12 w-auto object-contain" />
+              StayinUBUD
             </a>
           </div>
 
