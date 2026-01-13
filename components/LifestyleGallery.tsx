@@ -1,12 +1,12 @@
 import React from 'react';
 
 const IMAGES = [
-    { src: "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=2888&auto=format&fit=crop", label: "Details" },
-    { src: "https://images.unsplash.com/photo-1516205651411-a8531c535682?q=80&w=2070&auto=format&fit=crop", label: "Rituals" },
-    { src: "https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?q=80&w=2070&auto=format&fit=crop", label: "Design" },
-    { src: "https://images.unsplash.com/photo-1583212235753-b250a4b5b48e?q=80&w=1964&auto=format&fit=crop", label: "Taste" },
-    { src: "https://images.unsplash.com/photo-1559393031-109e87365a34?q=80&w=2070&auto=format&fit=crop", label: "Silence" },
-    { src: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop", label: "Nature" },
+    { src: "https://images.unsplash.com/photo-1621293954908-907159247fc8?q=80&w=2070&auto=format&fit=crop", label: "Details" },
+    { src: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=2538&auto=format&fit=crop", label: "Rituals" },
+    { src: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=2070&auto=format&fit=crop", label: "Design" },
+    { src: "https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1974&auto=format&fit=crop", label: "Taste" },
+    { src: "https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?q=80&w=2070&auto=format&fit=crop", label: "Silence" },
+    { src: "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?q=80&w=2574&auto=format&fit=crop", label: "Nature" },
 ];
 
 export const LifestyleGallery: React.FC = () => {

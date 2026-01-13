@@ -28,10 +28,21 @@ const AppContent: React.FC = () => {
       try {
         const { data, error } = await supabase.from('villas').select('*');
         if (!error && data && data.length > 0) {
-            setVillas(data);
+            // Map snake_case columns from DB to camelCase Typescript interface
+            const mappedVillas: Villa[] = data.map((v: any) => ({
+                ...v,
+                // Handle naming differences between DB and App
+                pricePerNight: v.price_per_night ?? v.pricePerNight,
+                imageUrl: v.image_url ?? v.imageUrl,
+                longDescription: v.long_description ?? v.longDescription,
+                // Ensure complex objects pass through if they are JSON columns
+                specs: v.specs || {}, 
+                location: v.location || { lat: 0, lng: 0 }
+            }));
+            setVillas(mappedVillas);
         }
       } catch (e) {
-        console.warn('Using static villa data');
+        console.warn('Using static villa data', e);
       }
     };
     fetchVillas();

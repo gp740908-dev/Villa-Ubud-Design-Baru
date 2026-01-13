@@ -45,8 +45,8 @@ export const Experience: React.FC = () => {
       <div className="w-full md:w-[60%] h-[50vh] md:h-[80vh] overflow-hidden relative order-2 md:order-1 mt-10 md:mt-0">
         <img 
             ref={imgRef}
-            src="https://images.unsplash.com/photo-1590059390047-685b095eb1bc?q=80&w=2785&auto=format&fit=crop"
-            alt="Ubud Atmosphere"
+            src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=2070&auto=format&fit=crop"
+            alt="Ubud Rice Terraces"
             className="w-full h-[120%] object-cover object-center -mt-10"
         />
       </div>

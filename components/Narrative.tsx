@@ -47,7 +47,7 @@ export const Narrative: React.FC = () => {
         <div className="md:col-span-7 relative h-[600px] md:h-[900px] overflow-hidden w-full">
             <img 
                 ref={imageRef}
-                src="https://images.unsplash.com/photo-1552853842-5a525f75e28f?q=80&w=2664&auto=format&fit=crop" 
+                src="https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?q=80&w=2670&auto=format&fit=crop" 
                 alt="Jungle Depth" 
                 className="absolute inset-0 w-full h-[120%] object-cover object-center -mt-12"
             />

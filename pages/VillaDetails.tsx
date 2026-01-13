@@ -27,7 +27,17 @@ export const VillaDetails: React.FC = () => {
           return;
         }
 
-        setVilla(data);
+        // Map snake_case from DB to camelCase for the app
+        const mappedVilla: Villa = {
+            ...data,
+            pricePerNight: data.price_per_night ?? data.pricePerNight,
+            imageUrl: data.image_url ?? data.imageUrl,
+            longDescription: data.long_description ?? data.longDescription,
+            specs: data.specs || {},
+            location: data.location || { lat: 0, lng: 0 }
+        };
+
+        setVilla(mappedVilla);
       } catch (err) {
         console.error(err);
         navigate('/404');
