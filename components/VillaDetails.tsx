@@ -29,7 +29,7 @@ export const VillaDetails: React.FC<VillaDetailsProps> = ({ slug, onNavigate, al
   const [showMobileBooking, setShowMobileBooking] = useState(false);
   const [bookings, setBookings] = useState<Booking[]>([]); 
   const containerRef = useRef<HTMLDivElement>(null);
-  const heroRef = useRef<HTMLDivElement>(null);
+  const heroRef = useRef<HTMLImageElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

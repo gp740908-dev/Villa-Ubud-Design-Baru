@@ -37,7 +37,9 @@ export const Layout: React.FC<LayoutProps> = ({ children, onNavigate }) => {
       
       {/* Main Content with Curtain Effect Logic */}
       {/* mb-[85vh] must match the h-[85vh] of the fixed Footer */}
-      <main className="relative z-10 bg-canvas mb-[85vh] shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] min-h-screen rounded-b-3xl overflow-hidden">
+      <main 
+        className="relative z-10 bg-canvas mb-[85vh] shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] min-h-screen rounded-b-3xl overflow-hidden"
+      >
         {children}
         
         {/* Decorative end-of-content line */}
